@@ -85,7 +85,7 @@ async function run() {
           return true;
       });
       
-      return [...acc, ...issueLabels]
+      return [...acc, ...filteredLabels]
     }, [])
   )
 

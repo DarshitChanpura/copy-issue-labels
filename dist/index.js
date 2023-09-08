@@ -99,7 +99,7 @@ function run() {
                 }
                 return true;
             });
-            return [...acc, ...issueLabels];
+            return [...acc, ...filteredLabels];
         }, []));
         labels.length > 0 && (yield client.issues.addLabels({
             owner: github.context.repo.owner,
